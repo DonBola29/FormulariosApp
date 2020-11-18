@@ -34,40 +34,150 @@ namespace FormulariosApp
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            //validaciones
-            if(this.txtNombre.Text.Length == 0)
+            if (this.txtNombre.Text.Length == 0)
             {
-               MessageBox.Show("Por favor debes ingresar el nombre...");
-                this.txtNombre.Focus(); //ubica el cursor en un control
-                return; //abandonar
+                MessageBox.Show("Por Favor debes ingresar el nombre");
+                this.txtNombre.Focus();
+                return;
+            }
+            if (this.txtHorasTrabajadas.Text.Length == 0)
+            {
+                MessageBox.Show("Por Favor debes ingresar las Horas Trabajadas");
+                this.txtHorasTrabajadas.Focus();
+                return;
+            }
+            if (this.txtValorHora.Text.Length == 0)
+            {
+                MessageBox.Show("Por Favor debes ingresar el valor de sus horas");
+                this.txtValorHora.Focus();
+                return;
+            }
+            if (this.txtBono.Text.Length == 0)
+            {
+                MessageBox.Show("Por Favor debes ingresar los Bonos recibidos");
+                this.txtBono.Focus();
+                return;
+            }
+            if (this.txtAsoTrabajadores.Text.Length == 0)
+            {
+                MessageBox.Show("Por Favor debes ingresar el egreso de asociacion de Trabajador");
+                this.txtAsoTrabajadores.Focus();
+                return;
+            }
+            if (this.txtBar.Text.Length == 0)
+            {
+                MessageBox.Show("Por Favor debes ingresar el egreso del Bar");
+                this.txtBar.Focus();
+                return;
+            }
+            if (this.txtCuentaPorPagar.Text.Length == 0)
+            {
+                MessageBox.Show("Por Favor debes ingresar el egreso de cuentas por pagar");
+                this.txtCuentaPorPagar.Focus();
+                return;
             }
 
-            //sumar los ingresos 
-            double horasTrabjadas = double.Parse( this.txtHorasTrab.Text);
+            double horasTrabajadas = double.Parse(this.txtHorasTrabajadas.Text);
             double valorHora = double.Parse(this.txtValorHora.Text);
             double bono = double.Parse(this.txtBono.Text);
-            double toting = horasTrabjadas * valorHora + bono;
+            double totIng = horasTrabajadas * valorHora + bono;
 
-            //mostrar el total de ingresos em el cuadro de texto
-            this.txtTotalIng.Text = toting.ToString();
+            //Mostrar total de ingresos en el cuadro de texto
+            this.txtTotalIng.Text = totIng.ToString();
 
             //sumar egresos
-            double asoTrab = double.Parse(this.txtAsoTrab.Text);
+
+            double asoTrabajadores = double.Parse(this.txtAsoTrabajadores.Text);
             double bar = double.Parse(this.txtBar.Text);
-            double cuentaxPagar = double.Parse(this.txtCuentaxPagar.Text);
-            double totEgre = asoTrab * bar + cuentaxPagar;
+            double cuentaPorPagar = double.Parse(this.txtCuentaPorPagar.Text);
+            double totEgresos = asoTrabajadores + bar + cuentaPorPagar;
+            this.txtTotalEgresos.Text = totEgresos.ToString();
 
-            //mostrar el total de egresos em el cuadro de texto
-            this.txtTotalEgresos.Text = totEgre.ToString();
+            double liquidoRecibir = totIng - totEgresos;
 
-            //mostrar mensaje de liquido a recibir
-           double LiquidoRecibir = totIng - totEgre;
-            IblResultado.Text = "Estimado" + this.txtNombre.Text + ", tu sueldo es: " + LiquidoRecibir;
+            lblResultados.Text = "Estimado, " + this.txtNombre.Text + ", tu sueldo es: " + liquidoRecibir.ToString();
+            return;
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close(); //cerrar el formlario actual
+        }
+
+        private void txtHorasTrabajadas_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtValorHora_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtBono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtAsoTrabajadores_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtBar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtCuentaPorPagar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo letras", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void frmSueldo_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
