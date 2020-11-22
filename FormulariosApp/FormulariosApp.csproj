@@ -46,6 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmBinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBinario.Designer.cs">
+      <DependentUpon>frmBinario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBinarioDecimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBinarioDecimal.Designer.cs">
+      <DependentUpon>frmBinarioDecimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEdadNombre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEdadNombre.Designer.cs">
+      <DependentUpon>frmEdadNombre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFechaNam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFechaNam.Designer.cs">
+      <DependentUpon>frmFechaNam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNumPrimo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNumPrimo.Designer.cs">
+      <DependentUpon>frmNumPrimo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSueldo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +84,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBinario.resx">
+      <DependentUpon>frmBinario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBinarioDecimal.resx">
+      <DependentUpon>frmBinarioDecimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEdadNombre.resx">
+      <DependentUpon>frmEdadNombre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFechaNam.resx">
+      <DependentUpon>frmFechaNam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNumPrimo.resx">
+      <DependentUpon>frmNumPrimo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmSueldo.resx">
       <DependentUpon>frmSueldo.cs</DependentUpon>
     </EmbeddedResource>
