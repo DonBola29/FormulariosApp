@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Factorial.Designer.cs">
+      <DependentUpon>Factorial.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBinario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,12 @@
     <Compile Include="frmFechaNam.Designer.cs">
       <DependentUpon>frmFechaNam.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmNumPrimo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,8 +94,23 @@
     <Compile Include="frmSueldo.Designer.cs">
       <DependentUpon>frmSueldo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Principal.Designer.cs">
+      <DependentUpon>Menu Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Multiplicar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Multiplicar.Designer.cs">
+      <DependentUpon>Multiplicar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Factorial.resx">
+      <DependentUpon>Factorial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBinario.resx">
       <DependentUpon>frmBinario.cs</DependentUpon>
     </EmbeddedResource>
@@ -96,11 +123,20 @@
     <EmbeddedResource Include="frmFechaNam.resx">
       <DependentUpon>frmFechaNam.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmNumPrimo.resx">
       <DependentUpon>frmNumPrimo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSueldo.resx">
       <DependentUpon>frmSueldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Principal.resx">
+      <DependentUpon>Menu Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Multiplicar.resx">
+      <DependentUpon>Multiplicar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

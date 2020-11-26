@@ -16,7 +16,7 @@ namespace FormulariosApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmFechaNam());
+            Application.Run(new frmMenu ());
         }
     }
 }
