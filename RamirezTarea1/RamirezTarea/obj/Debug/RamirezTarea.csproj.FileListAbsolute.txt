@@ -1,0 +1,12 @@
+C:\Users\jossi\source\repos\RamirezTarea1\RamirezTarea\obj\Debug\RamirezTarea.Properties.Resources.resources
+C:\Users\jossi\source\repos\RamirezTarea1\RamirezTarea\obj\Debug\RamirezTarea.csproj.GenerateResource.cache
+C:\Users\jossi\source\repos\RamirezTarea1\RamirezTarea\obj\Debug\RamirezTarea.csproj.CoreCompileInputs.cache
+C:\Users\jossi\source\repos\RamirezTarea1\RamirezTarea\obj\Debug\RamirezTarea.Forms.Form1.resources
+C:\Users\jossi\source\repos\RamirezTarea1\RamirezTarea\obj\Debug\RamirezTarea.Forms.Form2.resources
+C:\Users\jossi\source\repos\RamirezTarea1\RamirezTarea\obj\Debug\RamirezTarea.Forms.Form3.resources
+C:\Users\jossi\source\repos\RamirezTarea1\RamirezTarea\bin\Debug\RamirezTarea.exe.config
+C:\Users\jossi\source\repos\RamirezTarea1\RamirezTarea\bin\Debug\RamirezTarea.exe
+C:\Users\jossi\source\repos\RamirezTarea1\RamirezTarea\bin\Debug\RamirezTarea.pdb
+C:\Users\jossi\source\repos\RamirezTarea1\RamirezTarea\obj\Debug\RamirezTarea.exe
+C:\Users\jossi\source\repos\RamirezTarea1\RamirezTarea\obj\Debug\RamirezTarea.pdb
+C:\Users\jossi\source\repos\RamirezTarea1\RamirezTarea\obj\Debug\RamirezTarea.csprojAssemblyReference.cache
